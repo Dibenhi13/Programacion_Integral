@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Reserva Tu Crucero Sonado</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <h2>Agencia de Cruceros</h2>
+        <p>Completa el formulario para planificar tu proxima aventura en Alta Mar</p>
+
+        <!--INFO DE CLIENTE-->
+        <div class="seccion-formulario" id="seccion-pasajero">
+            <fieldset>
+                <legend>Informacion del pasajero principal</legend>
+
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ana Perez" pattern="[A-Za-z]{3,50}" title="Solo letras y espacios (3 a 50 caracteres)" required>
+                
+                <label for="email">Correo electronico:</label>
+                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" pattern="[a-zA-Z0-9.-]@[a-zA-Z]{2,}$" title="Ingresa un correo electronico valido" required>
+
+                <label for="telefono">Telefono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="123 456 7890" pattern="^(\+52\s?)?[0-9]{3}/s[0-9]{7}$" title="Ingresa un telefono valido" required>
+
+                <label for="password">Crea una contrasena para tu cuenta:</label>
+                <input type="password" id="password" name="password" pattern="(?=.*[A-Za-z])(?=.*\)[A-Za-z\d]{8,}" title="Minimo 8 caracteres, debe incluir al menos una letra y un numero" required>
+
+            </fieldset>
+        </div>
+
+        <!--Detalles del Viaje-->
+        <div class="seccion-formulario" id="seccion-viaje">
+            <fieldset>
+                <legend>Fechas y Preferencias del Crucero</legend>
+
+                <p><strong>Ruta</strong>Cozumel, Mexico - - > Bahamas &nbsp;|&nbsp;
+                <strong>Precio base desde:</strong>$650 USD por persona (4 noches, ocupacion doble)</p>
+
+                <label for="buscar_destino">Buscar destino especifico o puerto:</label>
+                <select name="destino" id="destino">
+                    <option value="cuba">Cuba</option>
+                    <option value="miami">Miami</option>
+                    <option value="bahamas">Bahamas</option>
+                </select>
+
+                <!--FECHAS-->
+                <label for="fecha_salida">Fecha de salida preferida:</label>
+                <input type="date" id="fecha_salida" name="fecha_salida">
+
+                <!--MES-->
+                <label for="mes_alternativo">Mes estimado de viaje:</label>
+                <input type="month" id="mes_alternativo" name="mes_alternativo">
+
+                <!--SEMANA-->
+                <label for="mes_alternativo">Semana especifica del year:</label>
+                <input type="week" id="semana_especifica" name="semana_especifica">
+
+                <!--FECHA HORA LOCAL-->
+                <label for="llegada_puerto">Fecha y hora estimada de llegada:</label>
+                <input type="datetime-local" id="llegada_puerto" name="llegada_puerto">
+
+                <!--HORA-->
+                <label for="hora_preferida_checkin">Hora preferida para el checkin presencial:</label>
+                <input type="time" id="hora_preferida_checkin" name="hora_preferida_checkin">
+
+                <!--PASAJEROS-->
+                <label for="pasajeros">Numero de pasajeros:</label>
+                <input type="number" id="pasajeros" name="pasajeros" min="1" max="10" value="2">
+
+                 <!--PRESUPUESTO POR NOCHE-->
+                <label for="presupuesto_noche">Presupuesto por noche:</label>
+                <input type="range" id="presupuesto_noche" name="presupuesto_noche" min="100" max="2000" step="50" oninput="this.nextElementSibling.value='$' + this.value">
+                <output>$1000</output>
+            </fieldset>
+        </div>
+
+        <!--Personalizacion Extra-->
+        <div class="seccion-formulario" id="seccion-personalizacion">
+            <fieldset>
+                <legend>Personaliza Tu Experiencia</legend>
+
+                <!--RADIO-->
+                <label for="">Ubicacion:</label>
+                <div class="inline-group"><input type="radio" id="camarote_interior" name="camarote" value="interior" checked><label for="camarote_interior">Interior - $650 USD por persona</label></div>
+                <div class="inline-group"><input type="radio" id="camarote_exterior" name="camarote" value="exterior" checked><label for="camarote_exterior">Exterior con vista al mar - $850 USD por persona</label></div>
+                <div class="inline-group"><input type="radio" id="camarote_balcon" name="camarote" value="balcon" checked><label for="camarote_balcon">Suite con balcon - $1200 USD por persona</label></div>
+            
+                <!--CHECKBOX-->
+                <label style="margin-top: 15px;">Servicios adicionales incluidos</label>
+                <div class="inline-group"><input type="checkbox" id="todo_incluido" name="extras" value="bebidas"><label for="todo_incluido">Paquete de bedidas $75 USD por persona</label></div>
+                <div class="inline-group"><input type="checkbox" id="excursiones" name="extras" value="excursiones"><label for="excursiones">Paquete excursionesguiadas en puerto $128 USD por persona</label></div>
+                <div class="inline-group"><input type="checkbox" id="spa" name="extras" value="spa"><label for="spa">Acceso al spa y masajes $95 USD por persona</label></div>
+                <div class="inline-group"><input type="checkbox" id="internet" name="extras" value="internet"><label for="internet">Servicio de internet a bordo $75 USD por persona</label></div>
+            
+                <!--COLOR-->
+                <label for="color_bandera">Elige el color tematico para tu kit de bienvenida a bordo:</label>
+                <input type="color" id="color_bandera" name="color_bandera" value="#0056b3">
+
+                <!--FILE-->
+                <label for="pasaporte">Sube una copia digital de tu pasaporte (pdf o imagen):</label>
+                <input type="file" name="pasaporte" id="pasaporte">
+                
+                <!--URL-->
+                <label for="sitio_web">Enlace a tu perfil de viajero o red social de referencias:</label>
+                <input type="url" id="sitio_web" name="sitio_web" placeholder="https://tu-perfil-viajero.com" pattern="https://,+" title="Debe comenzar con http:// o https://">
+
+            </fieldset>
+        </div>
+
+        <!--BOTONES DE INTERACCION-->
+        <div class="seccion_formulario" id="seccion acciones">
+            <fieldset>
+                <legend>Acciones</legend>
+                <div class="buttons_group">
+                    <input type="button" value="Calcular costo estimado" onclick="alert('Calculando presupuesto aproxiamdo para tu crucero');">
+
+                    <!--RESET-->
+                    <input type="reset" value="Borrar Formulario">
+
+                    <!--SUBMIT-->
+                    <input type="submit" value="Reservar Crucero Ahora">
+                </div>
+            </fieldset>
+        </div>
+    </form>
+</body>
+</html>

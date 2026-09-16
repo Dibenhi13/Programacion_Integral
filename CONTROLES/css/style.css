@@ -1,0 +1,319 @@
+/* =========================
+   ESTILOS GENERALES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #e8f7ff, #c9ebf7);
+    color: #243746;
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+/* =========================
+   FORMULARIO PRINCIPAL
+========================= */
+
+form {
+    max-width: 950px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 74, 116, 0.15);
+}
+
+/* TÍTULO PRINCIPAL */
+
+form > h2 {
+    text-align: center;
+    color: #006994;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+form > p {
+    text-align: center;
+    color: #607d8b;
+    margin-bottom: 35px;
+    font-size: 16px;
+}
+
+/* =========================
+   SECCIONES
+========================= */
+
+.seccion-formulario,
+.seccion_formulario {
+    margin-bottom: 30px;
+}
+
+fieldset {
+    border: 2px solid #d7edf6;
+    border-radius: 15px;
+    padding: 30px;
+    background-color: #fbfdff;
+}
+
+legend {
+    padding: 8px 15px;
+    background-color: #0077a8;
+    color: white;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* =========================
+   LABELS
+========================= */
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-top: 18px;
+    margin-bottom: 7px;
+    color: #24485a;
+}
+
+/* =========================
+   INPUTS / SELECT
+========================= */
+
+input,
+select {
+    font-family: inherit;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="datetime-local"],
+input[type="time"],
+input[type="number"],
+input[type="url"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #b9d7e5;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+/* EFECTO AL SELECCIONAR */
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #009bd1;
+    box-shadow: 0 0 0 3px rgba(0, 155, 209, 0.12);
+}
+
+/* PLACEHOLDER */
+
+input::placeholder {
+    color: #9aaeb7;
+}
+
+/* =========================
+   INFORMACIÓN DEL VIAJE
+========================= */
+
+#seccion-viaje fieldset > p {
+    background-color: #eaf7fc;
+    border-left: 5px solid #00a6d6;
+    padding: 15px;
+    border-radius: 8px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+#seccion-viaje strong {
+    color: #006994;
+}
+
+/* =========================
+   RANGE
+========================= */
+
+input[type="range"] {
+    width: calc(100% - 80px);
+    accent-color: #008bbd;
+    vertical-align: middle;
+}
+
+output {
+    display: inline-block;
+    margin-left: 10px;
+    background-color: #0077a8;
+    color: white;
+    padding: 7px 12px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+/* =========================
+   RADIO Y CHECKBOX
+========================= */
+
+.inline-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background-color: white;
+    border: 1px solid #d7edf6;
+
+    padding: 12px 15px;
+    margin: 8px 0;
+
+    border-radius: 8px;
+
+    transition: 0.2s ease;
+}
+
+.inline-group:hover {
+    border-color: #009bd1;
+    background-color: #f1fbff;
+    transform: translateX(3px);
+}
+
+.inline-group label {
+    margin: 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #0077a8;
+    cursor: pointer;
+}
+
+/* =========================
+   COLOR
+========================= */
+
+input[type="color"] {
+    width: 70px;
+    height: 45px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* =========================
+   ARCHIVO
+========================= */
+
+input[type="file"] {
+    background-color: white;
+}
+
+/* =========================
+   BOTONES
+========================= */
+
+.buttons_group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buttons_group input {
+    border: none;
+    padding: 13px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* CALCULAR */
+
+.buttons_group input[type="button"] {
+    background-color: #00a6d6;
+    color: white;
+}
+
+.buttons_group input[type="button"]:hover {
+    background-color: #0087ae;
+    transform: translateY(-2px);
+}
+
+/* BORRAR */
+
+.buttons_group input[type="reset"] {
+    background-color: #e8eef1;
+    color: #40555f;
+}
+
+.buttons_group input[type="reset"]:hover {
+    background-color: #d4dfe4;
+    transform: translateY(-2px);
+}
+
+/* RESERVAR */
+
+.buttons_group input[type="submit"] {
+    background-color: #0077a8;
+    color: white;
+}
+
+.buttons_group input[type="submit"]:hover {
+    background-color: #005f86;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    form {
+        padding: 25px 18px;
+    }
+
+    fieldset {
+        padding: 20px;
+    }
+
+    form > h2 {
+        font-size: 26px;
+    }
+
+    .buttons_group {
+        flex-direction: column;
+    }
+
+    .buttons_group input {
+        width: 100%;
+    }
+
+    input[type="range"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
