@@ -1,0 +1,74 @@
+{
+  "electronicos": [
+    {
+      "id": 1,
+      "producto": "Laptop",
+      "precio": 18500,
+      "stock": 8,
+      "marca": "Lenovo"
+    },
+    {
+      "id": 2,
+      "producto": "Mouse",
+      "precio": 450,
+      "stock": 25,
+      "marca": "Logitech"
+    },
+    {
+      "id": 3,
+      "producto": "Teclado",
+      "precio": 900,
+      "stock": 15,
+      "marca": "Redragon"
+    },
+    {
+      "id": 4,
+      "producto": "Monitor",
+      "precio": 4200,
+      "stock": 10,
+      "marca": "Samsung"
+    },
+    {
+      "id": 5,
+      "producto": "Audífonos",
+      "precio": 1200,
+      "stock": 18,
+      "marca": "Sony"
+    },
+    {
+      "id": 6,
+      "producto": "Webcam",
+      "precio": 850,
+      "stock": 12,
+      "marca": "Logitech"
+    },
+    {
+      "id": 7,
+      "producto": "Micrófono",
+      "precio": 1600,
+      "stock": 7,
+      "marca": "HyperX"
+    },
+    {
+      "id": 8,
+      "producto": "Tablet",
+      "precio": 7500,
+      "stock": 6,
+      "marca": "Samsung"
+    },
+    {
+      "id": 9,
+      "producto": "Bocina",
+      "precio": 1100,
+      "stock": 14,
+      "marca": "JBL"
+    },
+    {
+      "id": 10,
+      "producto": "Disco duro",
+      "precio": 1450,
+      "stock": 20,
+      "marca": "Seagate"
+    }
+  ]
+}
