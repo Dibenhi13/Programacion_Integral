@@ -1,0 +1,144 @@
+{
+  "deportes": [
+    {
+      "id": 1,
+      "nombre": "Fútbol",
+      "escenario": "Cancha de fútbol",
+      "dimensiones": "105 x 68 metros",
+      "numero_elementos": 11,
+      "equipo": {
+        "short": "Short deportivo",
+        "playera": "Playera de fútbol",
+        "tacos": "Tacos de fútbol",
+        "medias": "Medias deportivas"
+      },
+      "pais": "México"
+    },
+    {
+      "id": 2,
+      "nombre": "Básquetbol",
+      "escenario": "Cancha de básquetbol",
+      "dimensiones": "28 x 15 metros",
+      "numero_elementos": 5,
+      "equipo": {
+        "short": "Short de básquetbol",
+        "playera": "Jersey",
+        "tacos": "Tenis de básquetbol",
+        "medias": "Calcetas deportivas"
+      },
+      "pais": "Estados Unidos"
+    },
+    {
+      "id": 3,
+      "nombre": "Béisbol",
+      "escenario": "Campo de béisbol",
+      "dimensiones": "Variable según el estadio",
+      "numero_elementos": 9,
+      "equipo": {
+        "short": "Pantalón deportivo",
+        "playera": "Jersey de béisbol",
+        "tacos": "Tacos de béisbol",
+        "medias": "Medias largas"
+      },
+      "pais": "Estados Unidos"
+    },
+    {
+      "id": 4,
+      "nombre": "Voleibol",
+      "escenario": "Cancha de voleibol",
+      "dimensiones": "18 x 9 metros",
+      "numero_elementos": 6,
+      "equipo": {
+        "short": "Short deportivo",
+        "playera": "Playera de voleibol",
+        "tacos": "Tenis deportivos",
+        "medias": "Calcetas deportivas"
+      },
+      "pais": "Brasil"
+    },
+    {
+      "id": 5,
+      "nombre": "Tenis",
+      "escenario": "Cancha de tenis",
+      "dimensiones": "23.77 x 8.23 metros",
+      "numero_elementos": 1,
+      "equipo": {
+        "short": "Short de tenis",
+        "playera": "Playera deportiva",
+        "tacos": "Tenis para cancha",
+        "medias": "Calcetas deportivas"
+      },
+      "pais": "España"
+    },
+    {
+      "id": 6,
+      "nombre": "Fútbol americano",
+      "escenario": "Campo de fútbol americano",
+      "dimensiones": "109.7 x 48.8 metros",
+      "numero_elementos": 11,
+      "equipo": {
+        "short": "Pantalón deportivo",
+        "playera": "Jersey",
+        "tacos": "Tacos de fútbol americano",
+        "medias": "Medias deportivas"
+      },
+      "pais": "Estados Unidos"
+    },
+    {
+      "id": 7,
+      "nombre": "Rugby",
+      "escenario": "Campo de rugby",
+      "dimensiones": "100 x 70 metros",
+      "numero_elementos": 15,
+      "equipo": {
+        "short": "Short de rugby",
+        "playera": "Jersey de rugby",
+        "tacos": "Tacos deportivos",
+        "medias": "Medias largas"
+      },
+      "pais": "Nueva Zelanda"
+    },
+    {
+      "id": 8,
+      "nombre": "Hockey",
+      "escenario": "Cancha de hockey",
+      "dimensiones": "91.4 x 55 metros",
+      "numero_elementos": 11,
+      "equipo": {
+        "short": "Short deportivo",
+        "playera": "Playera de hockey",
+        "tacos": "Calzado para hockey",
+        "medias": "Medias largas"
+      },
+      "pais": "Canadá"
+    },
+    {
+      "id": 9,
+      "nombre": "Handball",
+      "escenario": "Cancha de handball",
+      "dimensiones": "40 x 20 metros",
+      "numero_elementos": 7,
+      "equipo": {
+        "short": "Short deportivo",
+        "playera": "Playera de handball",
+        "tacos": "Tenis deportivos",
+        "medias": "Calcetas deportivas"
+      },
+      "pais": "Alemania"
+    },
+    {
+      "id": 10,
+      "nombre": "Cricket",
+      "escenario": "Campo de cricket",
+      "dimensiones": "Variable según el estadio",
+      "numero_elementos": 11,
+      "equipo": {
+        "short": "Pantalón deportivo",
+        "playera": "Playera de cricket",
+        "tacos": "Calzado con tacos",
+        "medias": "Medias deportivas"
+      },
+      "pais": "India"
+    }
+  ]
+}
