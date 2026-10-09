@@ -1,4 +1,67 @@
+
 import express from "express";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Mostrar archivos HTML, CSS, JS e imágenes
+app.use(express.static(path.join(__dirname, "public")));
+
+// Obtener todos los productos
+app.get("/electronicos", (req, res) => {
+    try {
+        const ruta = path.join(__dirname, "ejem.json");
+
+        const datos = JSON.parse(
+            fs.readFileSync(ruta, "utf8")
+        );
+
+        res.json(datos);
+
+    } catch (error) {
+        console.error(error);
+
+        res.status(500).json({
+            mensaje: "Error al cargar productos"
+        });
+    }
+});
+
+// Obtener producto por ID
+app.get("/electronicos/:id", (req, res) => {
+    const ruta = path.join(__dirname, "ejem.json");
+
+    const datos = JSON.parse(
+        fs.readFileSync(ruta, "utf8")
+    );
+
+    const producto = datos.electronicos.find(
+        p => p.id === Number(req.params.id)
+    );
+
+    if (!producto) {
+        return res.status(404).json({
+            mensaje: "Producto no encontrado"
+        });
+    }
+
+    res.json(producto);
+});
+
+app.listen(PORT, () => {
+    console.log(`Servidor funcionando en puerto ${PORT}`);
+});
+
+
+
+
+/*import express from "express";
 import fs from "fs";
 import bodyParser from "body-parser";
 
@@ -78,4 +141,4 @@ app.delete("/electronicos/:id", (req, res) => {
 
 app.listen(3001, () => {
     console.log("Servidor escuchando por el puerto 3001");
-});
+});*/

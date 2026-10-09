@@ -5,70 +5,80 @@
       "producto": "Laptop",
       "precio": 18500,
       "stock": 8,
-      "marca": "Lenovo"
+      "marca": "Lenovo",
+      "imagen": "/images/lenovo.jpg"
     },
     {
       "id": 2,
       "producto": "Mouse",
       "precio": 450,
       "stock": 25,
-      "marca": "Logitech"
+      "marca": "Logitech",
+      "imagen": "/images/mouse.jpg"
     },
     {
       "id": 3,
       "producto": "Teclado",
       "precio": 900,
       "stock": 15,
-      "marca": "Redragon"
+      "marca": "Redragon",
+      "imagen": "/images/teclado.jpg"
     },
     {
       "id": 4,
       "producto": "Monitor",
       "precio": 4200,
       "stock": 10,
-      "marca": "Samsung"
+      "marca": "Samsung",
+      "imagen": "/images/monitor.avif"
     },
     {
       "id": 5,
       "producto": "Audífonos",
       "precio": 1200,
       "stock": 18,
-      "marca": "Sony"
+      "marca": "Sony",
+      "imagen": "/images/audifonos.avif"
     },
     {
       "id": 6,
       "producto": "Webcam",
       "precio": 850,
       "stock": 12,
-      "marca": "Logitech"
+      "marca": "Logitech",
+      "imagen": "/images/webcam.jpg"
     },
     {
       "id": 7,
       "producto": "Micrófono",
       "precio": 1600,
       "stock": 7,
-      "marca": "HyperX"
+      "marca": "HyperX",
+      "imagen": "/images/microfono.avif"
     },
     {
       "id": 8,
       "producto": "Tablet",
       "precio": 7500,
       "stock": 6,
-      "marca": "Samsung"
+      "marca": "Samsung",
+      "imagen": "/images/tablet.jpg"
     },
     {
       "id": 9,
       "producto": "Bocina",
       "precio": 1100,
       "stock": 14,
-      "marca": "JBL"
+      "marca": "JBL",
+      "imagen": "/images/bocina.webp"
     },
     {
       "id": 10,
       "producto": "Disco duro",
       "precio": 1450,
       "stock": 20,
-      "marca": "Seagate"
+      "marca": "Seagate",
+      "imagen": "/images/disco.jpg"
     }
   ]
 }
