@@ -1,0 +1,147 @@
+
+/* Colores principales */
+:root {
+    --bg: #fafaf8;
+    --fg: #1c1c1a;
+    --muted: #6b6b66;
+    --card: #ffffff;
+    --line: #e2e2dc;
+    --xy: #2b6cb0;
+    --xx: #c0507a;
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: Arial, sans-serif;
+}
+
+main {
+    max-width: 820px;
+    margin: auto;
+    padding: 24px 16px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.sub, .note, #estado {
+    color: var(--muted);
+}
+
+/* Buscador y filtros */
+.controls {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 16px 0;
+}
+
+input, select, button {
+    padding: 10px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--card);
+    color: var(--fg);
+}
+
+input {
+    flex: 1;
+    min-width: 140px;
+}
+
+button, th[data-clave] {
+    cursor: pointer;
+}
+
+/* Estadísticas */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.stat {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.stat span {
+    display: block;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.stat strong {
+    font-size: 20px;
+}
+
+/* Tabla */
+.wrap {
+    overflow-x: auto;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--line);
+}
+
+th {
+    color: var(--muted);
+}
+
+/* Barras de proporción */
+.bar {
+    display: flex;
+    height: 10px;
+    min-width: 120px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.xy {
+    background: var(--xy);
+}
+
+.xx {
+    background: var(--xx);
+}
+
+/* Leyenda */
+.legend {
+    margin: 12px 0;
+    color: var(--muted);
+}
+
+.legend b {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px 0 10px;
+}
+
+.tag {
+    border: 1px solid var(--line);
+    border-radius: 15px;
+    padding: 3px 8px;
+}
+
+.note {
+    font-size: 13px;
+}

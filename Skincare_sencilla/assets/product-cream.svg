@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 440" width="420" height="440">
+      <defs>
+    <linearGradient id="glass" x1="0" x2="1"><stop stop-color="#d5b5aa"/><stop offset=".25" stop-color="#fff8ee"/><stop offset=".65" stop-color="#f5e7df"/><stop offset="1" stop-color="#c5aaa1"/></linearGradient>
+    <linearGradient id="cap" x1="0" x2="1"><stop stop-color="#c6ada4"/><stop offset=".35" stop-color="#fffaf3"/><stop offset="1" stop-color="#bda39b"/></linearGradient>
+    <filter id="sh" x="-40%" y="-40%" width="180%" height="200%"><feDropShadow dx="7" dy="15" stdDeviation="11" flood-color="#694f4d" flood-opacity=".22"/></filter>
+    </defs><circle cx="210" cy="218" r="174" fill="#dae4d7" opacity=".5"/><ellipse cx="210" cy="379" rx="115" ry="19" fill="#917474" opacity=".13"/><g filter="url(#sh)"><rect x="96" y="200" width="228" height="153" rx="27" fill="url(#glass)"/><rect x="88" y="156" width="244" height="67" rx="13" fill="url(#cap)"/><path d="M104 220H317" stroke="#cbaea6" stroke-width="4"/>
+<text x="210" y="267" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="-1.6" fill="#53403f">bloom.skin</text>
+<path d="M156 285H263" stroke="#c79ba0"/>
+<text x="210" y="307" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#836968">PETAL CREAM</text>
+<text x="210" y="328" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#a08b84">50 ml / 1.7 fl oz</text></g>
+    </svg>

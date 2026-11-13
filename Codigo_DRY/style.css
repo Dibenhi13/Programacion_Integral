@@ -1,0 +1,159 @@
+:root{
+    --a:#f6f9fc;
+    --b:#1b2733;
+    --c:#fff;
+    --d:#d6e2ee;
+    --e:#3f8fcf;
+    --f:#f6b40e;
+    --g:#5b6b7b
+}
+
+@media(prefers-color-scheme:dark){
+    :root{--a:#101820;
+        --b:#eaf1f8;
+        --c:#1a2632;
+        --d:#2c3d4e;
+        --e:#6cb3ea;
+        --g:#a3b4c4}
+
+    }
+*{
+    box-sizing:border-box;
+    margin:0
+}
+
+body{
+    font-family:"Segoe UI",
+    Tahoma,sans-serif;
+    background:var(--a);
+    color:var(--b);
+    line-height:1.55
+}
+.h{
+    background:linear-gradient(180deg,#75aadb 0 33%,#fff 33% 66%,#75aadb 66% 100%);
+    text-align:center;
+    padding:3rem 1rem;
+    position:relative;color:#0d2a45
+}
+
+.h h1{
+    font-size:clamp(2rem,7vw,3.6rem);
+    letter-spacing:.02em
+}
+
+.h p{
+    max-width:55ch;
+    margin:.6rem auto 0;
+    font-size:1.05rem
+}
+
+.h i{
+    display:inline-block;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:var(--f);
+    margin-right:.5rem;
+    vertical-align:middle
+}
+
+.m{
+    max-width:1100px;
+    margin:0 auto;
+    padding:2rem 1rem 3rem
+}
+
+.m h2{
+    font-size:1.5rem;
+    margin-bottom:1rem
+}
+
+.k{
+    color:var(--g);
+    margin-bottom:1.2rem
+}
+
+#q{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+    gap:1.2rem
+}
+
+.w{
+    background:var(--c);
+    border:1px solid var(--d);
+    border-radius:10px;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column
+}
+
+.w .x{
+    height:90px;
+    padding:.8rem 1rem;
+    color:#fff;
+    display:flex;
+    align-items:flex-end;
+    font-weight:700;
+    font-size:1.15rem;
+    text-shadow:0 1px 3px rgba(0,0,0,.45)
+}
+
+.w .y{
+    padding:1rem;
+    display:flex;
+    flex-direction:column;
+    gap:.6rem;flex:1
+}
+
+.z{
+    color:var(--e);
+    font-weight:700;
+    font-size:.9rem
+}
+
+.w ul{
+    padding-left:1.1rem;
+    color:var(--g);
+    font-size:.93rem
+}
+
+.w button{
+    margin-top:auto;
+    font:inherit;
+    font-weight:700;
+    cursor:pointer;
+    background:var(--e);
+    color:#fff;
+    border:0;
+    border-radius:6px;
+    padding:.5rem .8rem
+}
+
+.w button:hover{
+    background:var(--f);
+    color:#000
+}
+
+.w button:focus-visible{
+    outline:3px solid var(--f);
+    outline-offset:2px
+}
+
+.v{
+    font-size:.93rem;
+    padding:.6rem .8rem;
+    border-left:4px solid var(--f);
+    background:var(--a)
+}
+
+.o{
+    display:none
+}
+
+.p{
+    text-align:center;
+    padding:1.5rem;
+    color:var(--g);
+    font-size:.9rem
+}

@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XX vs XY en Latinoamérica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>¿Más XX o más XY?</h1>
+
+        <p class="sub">
+            Razón de sexos en países latinos
+            (hombres por cada 100 mujeres).
+            Cifras aproximadas.
+        </p>
+
+        <!-- Controles de búsqueda -->
+        <div class="controls">
+            <input
+                type="search"
+                id="buscador"
+                placeholder="Buscar país..."
+                aria-label="Buscar país"
+            >
+
+            <select id="filtro" aria-label="Filtrar por predominio">
+                <option value="todos">Todos</option>
+                <option value="XY">Predomina XY</option>
+                <option value="igual">Casi igual</option>
+                <option value="XX">Predomina XX</option>
+            </select>
+
+            <button id="reiniciar">Reiniciar</button>
+        </div>
+
+        <!-- Estadísticas -->
+        <div class="stats" id="stats"></div>
+
+        <!-- Leyenda -->
+        <div class="legend">
+            <b class="xy"></b> XY (hombres)
+            <b class="xx"></b> XX (mujeres)
+        </div>
+
+        <!-- Tabla -->
+        <div class="wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th data-clave="pais">País ↕</th>
+                        <th data-clave="razon">Hombres/100 mujeres ↕</th>
+                        <th>Proporción</th>
+                        <th data-clave="categoria">Predomina ↕</th>
+                    </tr>
+                </thead>
+
+                <tbody id="cuerpo"></tbody>
+            </table>
+        </div>
+
+        <p id="estado" aria-live="polite"></p>
+
+        <p class="note">
+            Valores ilustrativos para esta actividad.
+            No utilizar como estadísticas demográficas oficiales.
+        </p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
