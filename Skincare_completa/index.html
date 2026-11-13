@@ -1,0 +1,655 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+    content="BLOOM SKIN: explora productos de skincare y crea una rutina a tu estilo con Find Your Glow.">
+
+  <title>BLOOM SKIN | Find Your Glow</title>
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Librería GSAP -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- JavaScript -->
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- Barra superior -->
+  <div class="topbar">
+    UNA RUTINA SIMPLE PARA DEJAR QUE TU PIEL FLOREZCA
+    <span aria-hidden="true">✳</span>
+  </div>
+
+  <!-- Menú -->
+  <header class="header" id="inicio">
+    <div class="container header-inner">
+
+      <a href="#inicio" class="logo" aria-label="Bloom Skin, inicio">
+        <span aria-hidden="true">✳</span> bloom<em>.</em>skin
+      </a>
+
+      <button class="mobile-menu-button" id="menu-button"
+        type="button" aria-label="Abrir menú"
+        aria-expanded="false" aria-controls="nav">
+        ☰
+      </button>
+
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <a href="#coleccion">La colección</a>
+        <a href="#quiz">Find Your Glow</a>
+        <a href="#nosotras">Nosotras</a>
+        <a href="#faq">Preguntas frecuentes</a>
+      </nav>
+
+      <button class="bag-button" id="bag-open"
+        type="button" aria-label="Abrir bolsa de productos">
+        Mi bolsa
+        <span class="bag-count" id="bag-count" aria-live="polite">0</span>
+      </button>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-layout">
+
+        <div class="hero-content reveal">
+
+          <span class="eyebrow">
+            SKINCARE PARA TU RITMO DE VIDA · 2026
+          </span>
+
+          <h1 id="hero-title">
+            Glow your <em>own way.</em>
+          </h1>
+
+          <p>
+            La piel perfecta no existe. Tu propia rutina, sí.
+            Descubre fórmulas de cuidado facial y encuentra
+            los pasos que van contigo.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="button button-dark" href="#quiz">
+              Descubre tu rutina
+              <span aria-hidden="true">↗</span>
+            </a>
+
+            <a class="button button-text" href="#coleccion">
+              Explorar productos
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="hero-mini">
+            <span>✷</span> TU PIEL · TU MOMENTO · TU GLOW
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <img src="assets/hero-skincare.svg"
+            width="720" height="760"
+            alt="Ilustración de cosméticos Bloom Skin en tonos rosa pastel">
+
+          <div class="round-note">
+            your daily <em>glow ritual</em> ✳
+          </div>
+
+          <div class="hero-index">
+            01 — FIND YOUR BLOOM
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Valores de marca -->
+    <div class="brand-strip" aria-label="Valores de la marca">
+      <div class="container brand-strip-inner">
+        <span>MORE SELF LOVE</span>
+        <b>✳</b>
+        <span>LESS COMPLICATIONS</span>
+        <b>✳</b>
+        <span>MORE YOU</span>
+      </div>
+    </div>
+
+    <!-- CATÁLOGO -->
+    <section class="section collection"
+      id="coleccion" aria-labelledby="collection-title">
+
+      <div class="container">
+
+        <div class="section-intro reveal">
+          <div>
+            <span class="eyebrow">01 / NUESTROS ESENCIALES</span>
+            <h2 id="collection-title">
+              La colección <em>Bloom.</em>
+            </h2>
+          </div>
+
+          <p>
+            Seis productos ficticios pensados para ilustrar
+            una rutina de cuidado facial que se adapte a ti.
+          </p>
+        </div>
+
+        <!-- Filtros -->
+        <div class="filters" role="group" aria-label="Filtrar productos">
+
+          <button class="filter active"
+            type="button" data-filter="todos" aria-pressed="true">
+            Todos <span>06</span>
+          </button>
+
+          <button class="filter"
+            type="button" data-filter="limpieza" aria-pressed="false">
+            Limpieza
+          </button>
+
+          <button class="filter"
+            type="button" data-filter="serum" aria-pressed="false">
+            Sérums
+          </button>
+
+          <button class="filter"
+            type="button" data-filter="hidratacion" aria-pressed="false">
+            Hidratación
+          </button>
+
+        </div>
+
+        <!-- Productos generados con JavaScript -->
+        <div class="products-grid"
+          id="products-grid" aria-live="polite">
+        </div>
+
+        <p class="academic-note">
+          *Catálogo, beneficios y precios creados exclusivamente
+          para este proyecto académico. No representan productos reales.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- CUESTIONARIO INTERACTIVO -->
+    <section class="quiz-section section"
+      id="quiz" aria-labelledby="quiz-title">
+
+      <div class="container quiz-layout">
+
+        <div class="quiz-description reveal">
+
+          <span class="eyebrow">
+            02 / UNA EXPERIENCIA PARA TI
+          </span>
+
+          <h2 id="quiz-title">
+            Find your <em>glow.</em>
+          </h2>
+
+          <p>
+            Sabemos que cada persona es diferente.
+            Responde tres preguntas y te mostraremos
+            una propuesta de rutina entre nuestros
+            productos ficticios.
+          </p>
+
+          <div class="quiz-decor">✳</div>
+
+          <div class="quiz-footnote">
+            No es un diagnóstico ni sustituye
+            una recomendación dermatológica.
+          </div>
+
+        </div>
+
+        <div class="quiz-card" id="quiz-card">
+
+          <div id="quiz-questions">
+
+            <!-- Progreso -->
+            <div class="quiz-progress">
+
+              <span id="quiz-counter">
+                PREGUNTA 01 DE 03
+              </span>
+
+              <div class="progress-track">
+                <div id="progress-fill"></div>
+              </div>
+
+            </div>
+
+            <!-- Pregunta 1 -->
+            <fieldset class="quiz-step" data-step="0">
+
+              <legend>¿Cómo describirías tu piel?</legend>
+
+              <p>
+                Selecciona la opción que mejor se acerque
+                a cómo la percibes.
+              </p>
+
+              <div class="answer-grid">
+
+                <label class="answer">
+                  <input type="radio" name="piel" value="seca">
+                  <span>☼</span> Seca
+                </label>
+
+                <label class="answer">
+                  <input type="radio" name="piel" value="mixta">
+                  <span>✿</span> Mixta
+                </label>
+
+                <label class="answer">
+                  <input type="radio" name="piel" value="grasa">
+                  <span>❋</span> Grasa
+                </label>
+
+                <label class="answer">
+                  <input type="radio" name="piel" value="sensible">
+                  <span>♡</span> Sensible
+                </label>
+
+              </div>
+            </fieldset>
+
+            <!-- Pregunta 2 -->
+            <fieldset class="quiz-step" data-step="1" hidden>
+
+              <legend>¿Qué buscas en tu rutina?</legend>
+
+              <p>Elige lo que más te interesa priorizar.</p>
+
+              <div class="answer-grid">
+
+                <label class="answer">
+                  <input type="radio" name="objetivo" value="hidratacion">
+                  <span>◌</span> Hidratación
+                </label>
+
+                <label class="answer">
+                  <input type="radio" name="objetivo" value="frescura">
+                  <span>✧</span> Sensación de frescura
+                </label>
+
+                <label class="answer">
+                  <input type="radio" name="objetivo" value="suavidad">
+                  <span>❃</span> Suavidad
+                </label>
+
+                <label class="answer">
+                  <input type="radio" name="objetivo" value="simple">
+                  <span>✳</span> Sencillez
+                </label>
+
+              </div>
+            </fieldset>
+
+            <!-- Pregunta 3 -->
+            <fieldset class="quiz-step" data-step="2" hidden>
+
+              <legend>¿Cómo sería tu rutina ideal?</legend>
+
+              <p>
+                No tiene que ser complicada para
+                ser un momento especial.
+              </p>
+
+              <div class="answer-grid answer-grid-two">
+
+                <label class="answer">
+                  <input type="radio" name="pasos" value="2">
+                  <span>02</span> Dos pasos esenciales
+                </label>
+
+                <label class="answer">
+                  <input type="radio" name="pasos" value="3">
+                  <span>03</span> Tres pasos para consentirme
+                </label>
+
+              </div>
+            </fieldset>
+
+            <!-- Error de validación -->
+            <p class="quiz-error" id="quiz-error" role="alert"></p>
+
+            <!-- Botones del cuestionario -->
+            <div class="quiz-navigation">
+
+              <button type="button"
+                class="button-quiet" id="quiz-back" hidden>
+                ← Anterior
+              </button>
+
+              <button type="button"
+                class="button button-dark" id="quiz-next">
+                Siguiente <span aria-hidden="true">→</span>
+              </button>
+
+            </div>
+
+          </div>
+
+          <!-- Resultados -->
+          <div class="quiz-result"
+            id="quiz-result" hidden aria-live="polite">
+
+            <span class="eyebrow">
+              TU RESULTADO BLOOM ✳
+            </span>
+
+            <h3 id="result-title">
+              Tu ritual está listo.
+            </h3>
+
+            <p id="result-description"></p>
+
+            <div class="routine-products" id="routine-products"></div>
+
+            <div class="result-actions">
+
+              <button type="button"
+                class="button button-dark" id="add-routine">
+                Añadir rutina a mi bolsa
+                <span aria-hidden="true">↗</span>
+              </button>
+
+              <button type="button"
+                class="button-quiet" id="quiz-reset">
+                Volver a empezar
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE LA MARCA -->
+    <section class="section story"
+      id="nosotras" aria-labelledby="story-title">
+
+      <div class="container story-layout">
+
+        <div class="story-art reveal">
+          <img src="assets/ingredients.svg"
+            width="630" height="650"
+            alt="Ilustración botánica con flores e ingredientes cosméticos"
+            loading="lazy">
+        </div>
+
+        <div class="story-copy reveal">
+
+          <span class="eyebrow">
+            03 / NUESTRA FILOSOFÍA
+          </span>
+
+          <h2 id="story-title">
+            No se trata de perfección.
+            <em>Se trata de ti.</em>
+          </h2>
+
+          <p>
+            BLOOM SKIN es una marca ficticia inspirada
+            en los pequeños rituales que nos hacen sentir bien.
+            Creemos en una belleza natural, en la sencillez
+            y en la posibilidad de crear una rutina
+            que se sienta propia.
+          </p>
+
+          <div class="story-points">
+            <div><span>01</span> A tu propio ritmo</div>
+            <div><span>02</span> Sin pasos imposibles</div>
+            <div><span>03</span> Con un poquito de amor propio</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section class="section faq"
+      id="faq" aria-labelledby="faq-title">
+
+      <div class="container faq-layout">
+
+        <div class="reveal">
+          <span class="eyebrow">
+            04 / RESOLVEMOS TUS DUDAS
+          </span>
+
+          <h2 id="faq-title">
+            Good questions, <em>good glow.</em>
+          </h2>
+
+          <p>
+            Una rutina sencilla comienza
+            con información clara.
+          </p>
+        </div>
+
+        <div class="faq-items">
+
+          <details>
+            <summary>
+              ¿Los productos se pueden comprar?
+              <span>+</span>
+            </summary>
+            <p>
+              Por ahora no. Este sitio es un proyecto académico
+              y todos los productos son ficticios.
+              La bolsa funciona como demostración
+              de una tienda en línea.
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              ¿Cómo funciona Find Your Glow?
+              <span>+</span>
+            </summary>
+            <p>
+              Seleccionas tres respuestas y JavaScript crea
+              una propuesta de productos a partir de reglas sencillas.
+              No analiza la piel ni hace diagnósticos.
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              ¿Puedo guardar mi bolsa?
+              <span>+</span>
+            </summary>
+            <p>
+              Sí, se guarda localmente en tu navegador
+              mediante localStorage. No necesitas crear
+              una cuenta ni compartir datos.
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              ¿Este sitio acepta pagos?
+              <span>+</span>
+            </summary>
+            <p>
+              No, únicamente simula agregar productos
+              a una bolsa y calcular el subtotal.
+              No tiene pasarela de pagos.
+            </p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+      <div class="container newsletter-layout">
+
+        <div>
+          <span class="eyebrow">
+            LOVE NOTES FROM BLOOM
+          </span>
+
+          <h2>Una dosis de <em>glow</em> en tu día.</h2>
+
+          <p>
+            Un espacio para imaginar las novedades
+            de nuestra comunidad.
+          </p>
+        </div>
+
+        <form id="newsletter-form">
+
+          <label for="newsletter-email">
+            Tu correo electrónico
+          </label>
+
+          <div class="newsletter-input">
+            <input id="newsletter-email"
+              type="email"
+              placeholder="hola@ejemplo.com" required>
+
+            <button type="submit">
+              Enviar →
+            </button>
+          </div>
+
+          <p id="newsletter-message"
+            role="status" aria-live="polite">
+            Formulario demostrativo.
+            No enviamos ni guardamos correos.
+          </p>
+
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container footer-main">
+
+      <div>
+        <a href="#inicio" class="logo">
+          <span aria-hidden="true">✳</span> bloom<em>.</em>skin
+        </a>
+
+        <p>Florece a tu manera, todos los días.</p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#coleccion">Colección</a>
+        <a href="#quiz">Find Your Glow</a>
+        <a href="#nosotras">Nosotras</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <div class="footer-big">
+        made to <em>bloom.</em>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <span>
+        © <span id="year"></span> BLOOM SKIN · Proyecto académico ficticio
+      </span>
+      <span>HECHO CON CARIÑO ✳</span>
+    </div>
+
+  </footer>
+
+  <!-- FONDO OSCURO DEL CARRITO -->
+  <div class="drawer-backdrop"
+    id="drawer-backdrop" hidden>
+  </div>
+
+  <!-- CARRITO LATERAL -->
+  <aside class="cart-drawer"
+    id="cart-drawer"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="cart-title"
+    tabindex="-1"
+    hidden>
+
+    <div class="cart-header">
+
+      <div>
+        <span class="eyebrow">
+          TU PEQUEÑO RITUAL
+        </span>
+
+        <h2 id="cart-title">
+          Mi bolsa <span id="drawer-count">(0)</span>
+        </h2>
+      </div>
+
+      <button class="close-drawer"
+        id="bag-close" type="button"
+        aria-label="Cerrar bolsa">
+        ×
+      </button>
+
+    </div>
+
+    <div class="cart-items" id="cart-items"></div>
+
+    <div class="cart-footer">
+
+      <div class="subtotal">
+        <span>Subtotal estimado</span>
+        <strong id="cart-subtotal">$0 MXN</strong>
+      </div>
+
+      <p>
+        Esta bolsa es una demostración.
+        No se realizan compras ni pagos reales.
+      </p>
+
+      <button class="button button-dark"
+        type="button" id="clear-cart">
+        Vaciar bolsa
+      </button>
+
+    </div>
+
+  </aside>
+
+  <!-- NOTIFICACIONES -->
+  <div class="toast"
+    id="toast"
+    role="status" aria-live="polite">
+  </div>
+
+</body>
+</html>

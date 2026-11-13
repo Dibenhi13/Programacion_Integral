@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 760" width="720" height="760" role="img" aria-label="Colección Bloom Skin">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5e4e1"/><stop offset="1" stop-color="#dfb5b7"/></linearGradient>
+  <linearGradient id="jar" x1="0" y1="0" x2="1" y2=".9"><stop stop-color="#fffaf5"/><stop offset=".55" stop-color="#eadbd0"/><stop offset="1" stop-color="#c2aea7"/></linearGradient>
+  <linearGradient id="bottle" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#dbc1b3"/><stop offset=".3" stop-color="#fffaf1"/><stop offset=".68" stop-color="#f8ece4"/><stop offset="1" stop-color="#cab4a9"/></linearGradient>
+  <linearGradient id="serum" x1="0" y1="0" x2="1" y2=".8"><stop stop-color="#fdf7ed"/><stop offset=".55" stop-color="#dbc5b9"/><stop offset="1" stop-color="#bba69e"/></linearGradient>
+  <linearGradient id="cap" x1="0" x2="1"><stop stop-color="#e3cdc6"/><stop offset=".5" stop-color="#fffaf1"/><stop offset="1" stop-color="#b69e99"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur stdDeviation="15"/></filter>
+  <filter id="soft" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="5" dy="13" stdDeviation="11" flood-color="#77575b" flood-opacity=".18"/></filter>
+</defs>
+<rect width="720" height="760" fill="url(#bg)"/>
+<circle cx="365" cy="325" r="265" fill="#fff9f1" opacity=".45"/>
+<circle cx="365" cy="325" r="218" fill="#fff9f3" opacity=".4"/>
+<path d="M0 625 C170 582 355 626 720 570 V760 H0Z" fill="#dfbaba"/>
+<path d="M0 648 C240 609 445 626 720 598 V760 H0Z" fill="#e8cccc"/>
+<!-- botanical stems -->
+<g opacity=".54" fill="none" stroke="#8e9a7f" stroke-width="6" stroke-linecap="round">
+ <path d="M110 590Q36 480 70 305"/><path d="M64 440Q8 408 24 349"/><path d="M80 388Q145 345 145 298"/>
+ <path d="M610 604Q710 490 675 316"/><path d="M666 437Q612 416 601 364"/><path d="M677 371Q719 341 711 300"/>
+</g>
+<g fill="#a1af91" opacity=".64">
+<ellipse cx="34" cy="371" rx="20" ry="51" transform="rotate(-34 34 371)"/><ellipse cx="128" cy="334" rx="19" ry="47" transform="rotate(39 128 334)"/>
+<ellipse cx="69" cy="320" rx="18" ry="47" transform="rotate(-7 69 320)"/><ellipse cx="617" cy="387" rx="18" ry="49" transform="rotate(-28 617 387)"/>
+<ellipse cx="702" cy="331" rx="15" ry="40" transform="rotate(35 702 331)"/>
+</g>
+<ellipse cx="361" cy="643" rx="275" ry="36" fill="#a66d70" opacity=".2" filter="url(#shadow)"/>
+<!-- ceramic platform -->
+<g filter="url(#soft)"><path d="M104 594Q352 558 621 590L652 628Q351 660 74 623Z" fill="#fef8ef"/><path d="M74 623Q359 655 652 628V660Q348 694 74 657Z" fill="#dbc4ba"/></g>
+<!-- tall cleanser pump -->
+<g filter="url(#soft)">
+  <rect x="185" y="296" rx="34" width="155" height="304" fill="url(#bottle)"/>
+  <path d="M203 320Q215 301 237 303V575Q216 575 203 564Z" fill="#fffef9" opacity=".26"/>
+  <rect x="230" y="255" rx="8" width="64" height="64" fill="url(#cap)"/>
+  <rect x="254" y="232" rx="5" width="17" height="35" fill="#f9f0e8"/>
+  <path d="M256 229H325Q342 229 342 246H256Z" fill="#e9ddd5"/>
+  <path d="M321 242H348" stroke="#f0e4da" stroke-width="10" stroke-linecap="round"/>
+  <rect x="198" y="388" width="129" height="141" rx="3" fill="#fffcf7" opacity=".8"/>
+  <text x="263" y="421" font-family="Arial,sans-serif" font-weight="700" font-size="18" letter-spacing="-1.4" text-anchor="middle" fill="#53403f">bloom.skin</text>
+  <path d="M226 442H300" stroke="#d3a4a3" stroke-width="1"/>
+  <text x="263" y="464" font-family="Arial,sans-serif" font-size="10" letter-spacing="2" text-anchor="middle" fill="#896e69">BLOOM</text>
+  <text x="263" y="482" font-family="Arial,sans-serif" font-size="10" letter-spacing="2" text-anchor="middle" fill="#896e69">CLEANSER</text>
+  <text x="263" y="510" font-family="Arial,sans-serif" font-size="8" text-anchor="middle" fill="#a18b85">150 ml / 5.0 fl oz</text>
+</g>
+<!-- tall dropper bottle right -->
+<g filter="url(#soft)">
+  <rect x="376" y="332" width="151" height="254" rx="31" fill="url(#serum)"/>
+  <rect x="406" y="260" width="92" height="93" rx="15" fill="url(#cap)"/>
+  <rect x="434" y="210" width="35" height="68" rx="13" fill="#fff9ef"/>
+  <ellipse cx="452" cy="211" rx="17" ry="22" fill="#f4eae2"/>
+  <rect x="387" y="419" width="128" height="111" rx="2" fill="#fffcf6" opacity=".8"/>
+  <text x="451" y="449" font-family="Arial,sans-serif" font-weight="700" font-size="18" letter-spacing="-1.4" text-anchor="middle" fill="#53403f">bloom.skin</text>
+  <path d="M413 468H488" stroke="#d3a4a3" stroke-width="1"/>
+  <text x="451" y="486" font-family="Arial,sans-serif" font-size="10" letter-spacing="2" text-anchor="middle" fill="#896e69">DEW DROPS</text>
+  <text x="451" y="512" font-family="Arial,sans-serif" font-size="8" text-anchor="middle" fill="#a18b85">hydrating serum</text>
+</g>
+<!-- cream jar at front -->
+<g filter="url(#soft)">
+  <rect x="297" y="525" width="189" height="100" rx="21" fill="url(#jar)"/>
+  <rect x="289" y="505" width="205" height="45" rx="11" fill="url(#cap)"/>
+  <path d="M302 534H481" stroke="#d3b6b0" stroke-width="3"/>
+  <text x="391" y="574" font-family="Arial,sans-serif" font-weight="700" font-size="19" letter-spacing="-1.5" text-anchor="middle" fill="#53403f">bloom.skin</text>
+  <text x="391" y="593" font-family="Arial,sans-serif" font-size="10" letter-spacing="2" text-anchor="middle" fill="#896e69">PETAL CREAM</text>
+</g>
+<!-- petals -->
+<g fill="#fff8f1" opacity=".85">
+ <ellipse cx="116" cy="206" rx="11" ry="26" transform="rotate(-20 116 206)"/>
+ <ellipse cx="146" cy="188" rx="9" ry="20" transform="rotate(31 146 188)"/>
+ <ellipse cx="596" cy="176" rx="12" ry="30" transform="rotate(48 596 176)"/>
+ <ellipse cx="573" cy="222" rx="8" ry="19" transform="rotate(-10 573 222)"/>
+</g>
+<g fill="#ba8893"><text x="105" y="127" font-size="28">✳</text><text x="578" y="107" font-size="21">✳</text></g>
+</svg>
